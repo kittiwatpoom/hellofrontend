@@ -6,6 +6,8 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "2.1.1",
+    "react-timeout": "^1.1.2",
+    "recompose": "^0.30.0",
     "styled-components": "^4.0.3"
   },
   "scripts": {

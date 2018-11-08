@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import Navbar from './index/Component/Navbar';
-import Preload from './index/Component/Preload';
+import Loading from './index/Component/Loading';
+import ReactTimeout from 'react-timeout'
+
 
 
 const CorgiImg = styled.img`
@@ -9,11 +11,28 @@ const CorgiImg = styled.img`
 
 `
 
-class App extends Component {
+
+  export default class App extends React.Component {
+    state = {
+      color: {}
+    };
+    
+    setColor = async (theme) => {
+      this.setState({
+        color: theme
+      })
+      setTimeout(() => {
+        
+      }, 2000);
+    }
+  
+  
+
   render() {
     return (
-
-
+      
+      <div>
+        <Loading />
       <div id="Corgi" className="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#Corgi" data-slide-to="0" class="active"></li>
@@ -43,33 +62,13 @@ class App extends Component {
         <Navbar />
       </div>
       </div>
+</div>
 
 
 
-
-      //  <div className="Fluid-container bg-warning">
-      //      <h1 className="text-center">Hello World</h1>
-      //   <div className="card text-white bg-dark">
-      //      <h1>Beaver</h1>
-      //     <div className="row card-footer">
-      //         <div className="col-12 col-lg-3">
-      //             <Navbar btn="btn btn-primary" name="Frontend"/>
-      //         </div>
-      //         <div className="col-12 col-lg-3">
-      //             <Navbar btn="btn btn-outline-danger" name="Design"/>
-      //         </div>
-      //         <div className="col-12 col-lg-3">
-      //             <Navbar btn="btn btn-warning" name="Game"/>
-      //         </div>
-      //         <div className="col-12 col-lg-3">
-      //             <Navbar btn="btn btn-outline-success" name="Infra"/>
-      //         </div>
-      //     </div>
-      //   </div>
-      //  </div>
-
-    );
+      
+      );
+    }
   }
-}
 
-export default App;
+
