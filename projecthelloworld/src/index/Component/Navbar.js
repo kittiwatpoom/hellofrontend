@@ -138,14 +138,14 @@ const Nav6 = styled.a`
 
 
 const Navbar = () => (
-    <div id="mySidenav" class="sidenav">
-        <Nav href="#" id="home">Home</Nav>
-        <Nav1 href="#" id="what">What</Nav1>
-        <Nav2 href="#" id="who">Who</Nav2>
-        <Nav3 href="#" id="where">Where</Nav3>
-        <Nav4 href="#" id="when">When</Nav4>
-        <Nav5 href="#" id="faq">FAQ</Nav5>
-        <Nav6 href="#" id="contact">Contact</Nav6>
+    <div id="mySidenav" class="sidenav-current">
+        <Nav class="current" href="#" id="home">Home</Nav>
+        <Nav1 class="current" href="#" id="what">What</Nav1>
+        <Nav2 class="current" href="#" id="who">Who</Nav2>
+        <Nav3 class="current" href="#" id="where">Where</Nav3>
+        <Nav4 class="current" href="#" id="when">When</Nav4>
+        <Nav5 class="current" href="#" id="faq">FAQ</Nav5>
+        <Nav6 class="current" href="#" id="contact">Contact</Nav6>
     </div>
 
 
