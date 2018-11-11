@@ -134,80 +134,25 @@ const Nav6 = styled.a`
     background-color: #ffb84d;
     z-index:1;
 `
-
+const Menu = styled.div`
+right: -5PX;
+position:fixed;
+z-index:1;
+`
 
 
 const Navbar = () => (
-    <div id="mySidenav" class="sidenav-current">
-        <Nav class="current" href="#" id="home">Home</Nav>
-        <Nav1 class="current" href="#" id="what">What</Nav1>
-        <Nav2 class="current" href="#" id="who">Who</Nav2>
-        <Nav3 class="current" href="#" id="where">Where</Nav3>
-        <Nav4 class="current" href="#" id="when">When</Nav4>
-        <Nav5 class="current" href="#" id="faq">FAQ</Nav5>
-        <Nav6 class="current" href="#" id="contact">Contact</Nav6>
-    </div>
+    <Menu id="mySidenav" class="sidenav-current">
+        <Nav className="list-group-item" href="#Home" id="Home" data-target="#carouselExampleControls" data-slide-to="0">Home</Nav>
+        <Nav1 className="list-group-item" href="#What" id="#What" data-target="#carouselExampleControls" data-slide-to="1">What</Nav1>
+        <Nav2 className="list-group-item" href="#Who" id="#Who" data-target="#carouselExampleControls" data-slide-to="2">Who</Nav2>
+        <Nav3 className="list-group-item" href="#Where" id="#Where" data-target="#carouselExampleControls" data-slide-to="3">Where</Nav3>
+        <Nav4 className="list-group-item" href="#When" id="#When" data-target="#carouselExampleControls" data-slide-to="4">When</Nav4>
+        <Nav5 className="list-group-item" href="#FAQ" id="#FAQ" data-target="#carouselExampleControls" data-slide-to="5">FAQ</Nav5>
+        <Nav6 className="list-group-item" href="#Contact" id="#Contact" data-target="#carouselExampleControls" data-slide-to="6">Contact</Nav6>
+    </Menu>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // <div class="Fluid-container bg-warning">
-
-    //     <div class="row">
-    //     <div class="col">
-    //         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
-    //             <a class="navbar-brand" href="#">Navbar</a>
-    //             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    //                 <span class="navbar-toggler-icon"></span>
-    //             </button>
-    //         </nav>
-
-    //     </div>
-
-    //         <div class="container">
-    //         <div class="col-9">
-    //             <ul class="nav justify-content-center">
-    //                 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
-    //                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    //                         <div class="navbar-nav">
-    //                             <a class="nav-item nav-link mr-5" href="#">What</a>
-    //                             <a class="nav-item nav-link mr-5" href="#">Who</a>
-    //                             <a class="nav-item nav-link mr-5" href="#">Where</a>
-    //                             <a class="nav-item nav-link mr-5" href="#">When</a>
-    //                             <a class="nav-item nav-link mr-5" href="#">FAQ</a>
-    //                             <a class="nav-item nav-link mr-5" href="#">Contact</a>
-
-    //                         </div>
-    //                     </div>
-
-    //                 </nav>
-    //             </ul>
-
-    //         </div>
-    //         </div>
-
-    //     </div>
-
-    // </div >
 
 )
 

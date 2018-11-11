@@ -1,20 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Text = styled.h1`
-    margin:auto;
-    width:100%;
-    height:100%;
-    background-color:#000000;  
-    z-index:1;
-    text-align:center;
- 
+const Whenn = styled.img`
+    width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+`
+const Dog = styled.img`
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    left: 1000px;
+    top: 400px;
+
 `
 
-const When =() => (
-    <Text>
-        Hello Corgi!!!!
-    </Text>
+const When = () => (
+    <div>
+
+        <Whenn src="image/Whenn.png" />
+        <Dog src="image/corgi8.gif" />
+    </div>
+
 )
 
 
