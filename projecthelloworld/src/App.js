@@ -44,25 +44,25 @@ export default class App extends React.Component {
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
-            <div id="Home" class="carousel-item active">
+            <div id="Home" class="carousel-item active" data-interval="200000">
               <Landing />
             </div>
-            <div id="What" class="carousel-item">
+            <div id="What" class="carousel-item" data-interval="200000">
               <What />
             </div>
-            <div id="Who" class="carousel-item">
+            <div id="Who" class="carousel-item" data-interval="200000">
               <Who />
             </div>
-            <div id="Where" class="carousel-item">
+            <div id="Where" class="carousel-item" data-interval="200000">
               <Where />
             </div>
-            <div id="When" class="carousel-item">
+            <div id="When" class="carousel-item" data-interval="200000">
               <When />
             </div>
-            <div id="FAQ" class="carousel-item">
+            <div id="FAQ" class="carousel-item" data-interval="200000">
               <FAQ />
             </div>
-            <div id="Contact" class="carousel-item">
+            <div id="Contact" class="carousel-item" data-interval="200000">
               <Contact />
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

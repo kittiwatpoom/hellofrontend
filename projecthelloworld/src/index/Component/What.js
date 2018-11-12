@@ -17,7 +17,9 @@ const Dog = styled.img`
     left: 1000px;
     top: 400px;
 
+
 `
+
 
 const What = () => (
     <div>
